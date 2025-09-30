@@ -1,0 +1,294 @@
+@import "tailwindcss";
+
+/* =============================
+   Tailwind v4 Theme Tokens
+   ============================= */
+@theme {
+  /* Typography */
+  --font-sans: "Pretendard", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+
+  /* Glassmorphism & Neon Palette */
+  --color-surface: #0B0F19;           /* Deep Navy Background */
+  --color-panel: oklch(100% 0 0 / 0.07); /* Glass Panel (rgba(255,255,255,0.07)) */
+  --color-elev: oklch(100% 0 0 / 0.14);  /* Elevated Glass */
+  --color-ink: oklch(100% 0 0 / 0.92);  /* Primary Text */
+  --color-muted: oklch(100% 0 0 / 0.85); /* Secondary Text (increased opacity for better visibility) */
+  --color-border: oklch(100% 0 0 / 0.15); /* Glass Border */
+
+  --color-brand: #818cf8;              /* Pastel Neon Indigo (indigo-400) */
+  --color-brand-600: #818cf8;
+  --color-brand-700: #6366f1;          /* Brighter Indigo (indigo-500) */
+  --color-accent: #7dd3fc;             /* Pastel Neon Sky (sky-300) */
+  --color-fuchsia: #e879f9;            /* Pastel Neon Fuchsia (fuchsia-400) */
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+
+  /* Layout tokens (PC only) */
+  --sidebar-w-lg: 16rem; /* 256px */
+  --sidebar-w-md: 3rem;  /* 48px */
+  --container: 1280px;  /* 본문 컨테이너 폭 */
+
+  /* Shadows */
+  --shadow-soft: 0 6px 18px rgba(28,25,23,0.06);
+  --shadow-card: 0 2px 10px rgba(28,25,23,0.06);
+  --shadow-text-hero: 0 2px 8px rgb(0 0 0 / 0.5);
+}
+
+/* =============================
+   Base Layer
+   ============================= */
+@layer base {
+  :root { color-scheme: dark; }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-surface); /* Fallback */
+    background-image: radial-gradient(circle at 20% 25%, color-mix(in oklab, var(--color-brand) 8%, transparent) 0%, var(--color-surface) 25%);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    font-size: 16px; /* Set base font size to 16px (text-base) */
+    overflow-x: hidden; /* Prevent horizontal scroll from background gradient */
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-brand) 30%, transparent);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;            /* font-semibold */
+    letter-spacing: -0.025em;    /* tracking-tight */
+    color: var(--color-ink);
+  }
+  h1 { @apply text-2xl; } /* 24px */
+  h2 { @apply text-xl; }  /* 20px */
+  h3 { @apply text-lg; }  /* 18px */
+
+  a { color: var(--color-brand); transition: color 150ms ease-in-out; }
+  a:hover { color: color-mix(in oklab, var(--color-brand) 85%, white 15%); }
+
+  #root { text-align: left; }
+
+  /* 기본 포커스 스타일 통일 (버튼/링크/입력) */
+  :where(button, [role="button"], a, input, select, textarea) {
+    --ring-color: color-mix(in oklab, var(--color-brand) 45%, transparent);
+    --ring-offset: var(--color-surface);
+  }
+  :where(button, [role="button"], a, input, select, textarea):focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--ring-color), 0 0 0 4px var(--ring-offset);
+    border-radius: 8px;
+  }
+}
+
+/* =============================
+   Component Layer
+   ============================= */
+@layer components {
+  /* Cozy dotted background (옵션) */
+  .bg-cozy-pattern {
+    background-image: radial-gradient(rgba(31, 26, 23, 0.04) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem; /* py-2 px-3 */
+    border-radius: 0.375rem; /* rounded-md */
+    font-weight: 600; /* font-semibold */
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05); /* shadow-sm */
+    color: #fff;
+    background-color: var(--color-brand);
+  }
+  .btn-primary:hover { background-color: var(--color-brand-700); box-shadow: 0 0 20px 0 color-mix(in oklab, var(--color-brand) 40%, transparent); }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+    color: var(--color-brand);
+    background-color: transparent;
+  }
+  .btn-ghost:hover { background-color: color-mix(in oklab, var(--color-brand) 8%, transparent); }
+
+  /* ---------- Cards ---------- */
+  .card {
+    padding: 1.5rem; /* p-6 */
+    border: 1px solid;
+    background-color: var(--color-panel);
+    border-color: var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .card-elev {
+    background-color: var(--color-elev);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+  }
+  .card-compact { padding: 0.75rem; }
+
+  /* ---------- Inputs ---------- */
+  .input {
+    @apply w-full px-3 py-2 transition-colors duration-150;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-ink); /* Added this line */
+  }
+  .input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px color-mix(in oklab, var(--color-brand) 35%, transparent);
+    border-color: var(--color-brand);
+  }
+  .input::placeholder { color: color-mix(in oklab, var(--color-muted) 60%, transparent); }
+  .radio {
+    @apply appearance-none w-4 h-4 rounded-full border-2 transition-all;
+    border-color: var(--color-muted);
+    background-color: var(--color-surface);
+  }
+  .radio:hover { border-color: var(--color-brand); }
+  .radio:checked {
+    border-color: var(--color-brand);
+    background-color: var(--color-brand);
+    background-image: radial-gradient(white 35%, transparent 40%);
+  }
+
+  /* App Shell is now handled by flexbox in Layout.tsx, grid styles are no longer needed. */
+
+  /* ---------- App Shell ---------- */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    height: 100%; /* Fill height, width is from grid */
+    background-color: color-mix(in oklab, var(--color-panel) 96%, var(--color-elev) 4%);
+    border-color: var(--color-border);
+  }
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem; padding-right: 1.5rem; /* px-6 */
+    height: 56px;
+    background-color: var(--color-panel);
+    border-bottom: 1px solid var(--color-border);
+    backdrop-filter: blur(8px);
+  }
+  .meta { font-size: 0.875rem; line-height: 1.25rem; font-variant-numeric: tabular-nums; color: var(--color-ink); }
+  .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 0.375rem; padding: 0.125rem 0.5rem; /* py-0.5 px-2 */
+    font-size: 0.75rem; line-height: 1rem; font-weight: 500;
+    background-color: color-mix(in oklab, var(--color-brand) 12%, transparent);
+    color: var(--color-brand);
+  }
+
+  /* ---------- Navigation ---------- */
+  .nav-brand { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; letter-spacing: -0.025em; color: var(--color-ink); font-size: 22px; line-height: 28px; }
+
+  .nav-link {
+    position: relative; display: inline-flex; align-items: center;
+    border-radius: 0.375rem; padding: 0.5rem 0.75rem; /* py-2 px-3 */
+    font-weight: 500; transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+    color: var(--color-ink);
+    font-size: 14px; line-height: 20px;
+  }
+  .nav-link:hover { background-color: color-mix(in oklab, var(--color-ink) 6%, transparent); }
+  .nav-link[aria-current="page"] { color: var(--color-brand); }
+  .nav-link[aria-current="page"]::after {
+    content: "";
+    position: absolute; left: 12px; right: 12px; bottom: 4px; height: 2px;
+    background-color: var(--color-brand); border-radius: 2px;
+  }
+
+  /* ---------- Hero / Carousel helpers ---------- */
+  .hero-overlay { background-image: linear-gradient(to right, rgba(0,0,0,.35), rgba(0,0,0,.2), transparent); }
+  .carousel-indicators { position: absolute; bottom: 0.75rem; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 0.5rem; }
+  .carousel-dot { height: 0.5rem; width: 0.5rem; border-radius: 9999px; transition: all 300ms ease-in-out; background-color: rgba(255,255,255,0.4); }
+  .carousel-dot[aria-current="true"] { width: 1.5rem; background-color: #fff; }
+
+  /* ---------- Chat (optional) ---------- */
+  .chat-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .chat-item { display: flex; gap: 0.5rem; align-items: flex-end; }
+  .avatar { border-radius: 0.375rem; width: 28px; height: 28px; background-color: color-mix(in oklab, var(--color-ink) 6%, transparent); }
+  .bubble-in { padding: 0.5rem 0.75rem; max-width: 70%; background-color: var(--color-elev); border: 1px solid var(--color-border); border-radius: 8px 8px 8px 4px; }
+  .bubble-out { padding: 0.5rem 0.75rem; margin-left: auto; max-width: 70%; background-color: color-mix(in oklab, var(--color-brand) 8%, var(--color-panel)); border: 1px solid color-mix(in oklab, var(--color-brand) 25%, var(--color-border)); border-radius: 8px 8px 4px 8px; }
+  .chat-time { font-size: 11px; line-height: 1; font-variant-numeric: tabular-nums; color: var(--color-muted); }
+
+  /* ---------- Navbar (page top) ---------- */
+  .navbar { width: 100%; border-bottom: 1px solid; position: sticky; top: 0; z-index: 40; background-color: var(--color-panel);
+    border-color: var(--color-border); height: 56px; backdrop-filter: blur(8px); }
+  .navbar-inner { margin-left: auto; margin-right: auto; display: flex; height: 100%; align-items: center; justify-content: space-between; max-width: var(--container); padding-left: 2rem; padding-right: 2rem; }
+
+  /* ---------- Cards page utilities ---------- */
+  .card-page { padding: 2rem; }
+}
+
+/* ---------- Loading Spinner ---------- */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.loading-spinner {
+  display: inline-block;
+  width: 1.25rem; /* 20px */
+  height: 1.25rem; /* 20px */
+  border: 3px solid oklch(100% 0 0 / 0.2); /* 반투명 테두리 */
+  border-top-color: var(--color-brand); /* 브랜드 색상으로 강조 */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* =============================
+   Utilities Layer (Tailwind v4)
+   ============================= */
+/* Replace @utility with plain classes for v4 stability */
+.container-pc { margin-left: auto; margin-right: auto; max-width: var(--container); padding-left: 2rem; padding-right: 2rem; }
+.elev-hover { transition: all 300ms ease-out; }
+.elev-hover:hover {
+  transform: perspective(1000px) rotateX(1.5deg) rotateY(-1deg) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-color: oklch(100% 0 0 / 0.25);
+}
+.glass-soft { backdrop-filter: blur(10px); background-color: color-mix(in oklab, white 40%, transparent); }
+.ring-brand { box-shadow: 0 0 0 2px color-mix(in oklab, var(--color-brand) 45%, transparent), 0 0 0 4px var(--color-surface); }
+
+/* =============================
+   Scrollbars (desktop)
+   ============================= */
+.scroll-thin { scrollbar-width: thin; }
+.scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--color-ink) 12%, transparent); border-radius: 8px; }
+.scroll-thin::-webkit-scrollbar-track { background: transparent; }
+
+/* =============================
+   Motion
+   ============================= */
+@media (prefers-reduced-motion: no-preference) {
+  .app-shell { @apply transition-all duration-300 ease-in-out; }
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+@keyframes logo-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo { animation: logo-spin infinite 20s linear; }
+}
