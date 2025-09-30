@@ -1,3 +1,43 @@
 {
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+  // 파일 인코딩/개행 (항상 UTF-8)
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": true,
+  "editor.renderControlCharacters": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // Git Bash를 기본 터미널로 지정
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "icon": "terminal-bash"
+    }
+  },
+
+  // Git Bash 실행 시 UTF-8 로케일 강제
+  "terminal.integrated.env.windows": {
+    "LANG": "ko_KR.UTF-8",
+    "LC_ALL": "ko_KR.UTF-8"
+  },
+
+  // 렌더러 자동 선택 (문자 깨짐 예방)
+  "terminal.integrated.rendererType": "auto",
+
+  // Codex CLI가 사용할 기본 쉘을 Git Bash로 지정
+  "codex.shellPath": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "codex.shellArgs": ["-lc"]
 }

@@ -1,0 +1,795 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "store_name": "화정점",
+    "last_updated": "2025-07-24T19:34:28.891139"
+  },
+  "tasks": [
+    {
+      "cleaning_content": "제빙기 건반,레일,필터",
+      "interval": 7,
+      "last_cleaned": "2025-07-23",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-08",
+          "cleaner": "김동휘,차성환"
+        },
+        {
+          "date": "2025-07-15",
+          "cleaner": "이승민"
+        },
+        {
+          "date": "2025-07-23",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "제빙기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "1번 제빙기 뚜껑 열지 않고 분해,세니아이",
+      "interval": 30,
+      "last_cleaned": "2025-07-09",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-10",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "제빙기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "1번 제빙기 뚜껑 열고 분해,응축기",
+      "interval": 180,
+      "last_cleaned": "2025-06-27",
+      "cleaner": "",
+      "history": [],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "제빙기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "샤워스크린, 샤워홀더(디퓨저), 볼트",
+      "interval": 30,
+      "last_cleaned": "2025-07-02",
+      "cleaner": "차성환,이승민",
+      "history": [
+        {
+          "date": "2025-07-02",
+          "cleaner": "차성환,이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "커피머신",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "커피머신 배관,누수점검,샤워스크린,가스켓교체",
+      "interval": 180,
+      "last_cleaned": "2025-07-02",
+      "cleaner": "차성환,이승민",
+      "history": [
+        {
+          "date": "2025-07-02",
+          "cleaner": "차성환,이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "커피머신",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "튀김기 유증기 필터",
+      "interval": 30,
+      "last_cleaned": "2025-07-14",
+      "cleaner": "차성환",
+      "history": [
+        {
+          "date": "2025-07-14",
+          "cleaner": "차성환"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "튀김기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "스텐가림막",
+      "interval": 14,
+      "last_cleaned": "2025-07-16",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-02",
+          "cleaner": "이승민"
+        },
+        {
+          "date": "2025-07-16",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "튀김기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "정수필터 점검",
+      "interval": 180,
+      "last_cleaned": "2025-06-27",
+      "cleaner": "",
+      "history": [],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "블랜더 상단커버,고무패드,자석패드",
+      "interval": 7,
+      "last_cleaned": "2025-07-22",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-06",
+          "cleaner": "차성환"
+        },
+        {
+          "date": "2025-07-14",
+          "cleaner": "이승민,차성환"
+        },
+        {
+          "date": "2025-07-22",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "블렌더",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "블랜더 커플링,칼날,너트",
+      "interval": 30,
+      "last_cleaned": "2025-06-28",
+      "cleaner": "김여경",
+      "history": [
+        {
+          "date": "2025-07-08",
+          "cleaner": "김여경"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "블렌더",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "그라인더 약품 청소",
+      "interval": 7,
+      "last_cleaned": "2025-07-22",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-06",
+          "cleaner": "차성환"
+        },
+        {
+          "date": "2025-07-14",
+          "cleaner": "이승민"
+        },
+        {
+          "date": "2025-07-22",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "커피머신",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "그라인더 분해,칼날",
+      "interval": 30,
+      "last_cleaned": "2025-06-27",
+      "cleaner": "",
+      "history": [],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "커피머신",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "앞 냉장고 성에제거",
+      "interval": 30,
+      "last_cleaned": "2025-06-27",
+      "cleaner": "이승민,이지영,이선민",
+      "history": [
+        {
+          "date": "2025-07-07",
+          "cleaner": "이승민,이지영,이선민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "냉장고",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "소화기 먼지 닦기",
+      "interval": 30,
+      "last_cleaned": "2025-07-02",
+      "cleaner": "이정민",
+      "history": [
+        {
+          "date": "2025-07-02",
+          "cleaner": "이정민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "에어컨 필터 청소(여름은 7일간격)",
+      "interval": 7,
+      "last_cleaned": "2025-07-23",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-12",
+          "cleaner": "",
+          "postpone_reason": "주말"
+        },
+        {
+          "date": "2025-07-14",
+          "cleaner": "",
+          "postpone_reason": "매우 바빴음"
+        },
+        {
+          "date": "2025-07-14",
+          "cleaner": "이승민"
+        },
+        {
+          "date": "2025-07-22",
+          "cleaner": "",
+          "postpone_reason": "바빠서"
+        },
+        {
+          "date": "2025-07-23",
+          "cleaner": "이승민"
+        },
+        {
+          "date": "2025-07-23",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "튀김기 전원부 과산탄소다",
+      "interval": 14,
+      "last_cleaned": "2025-07-18",
+      "cleaner": "차성환",
+      "history": [
+        {
+          "date": "2025-07-04",
+          "cleaner": "차성환"
+        },
+        {
+          "date": "2025-07-18",
+          "cleaner": "차성환"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "튀김기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "튀김기 뚜껑,바스켓 과탄산소다",
+      "interval": 14,
+      "last_cleaned": "2025-07-21",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-06",
+          "cleaner": "이승민,차성환"
+        },
+        {
+          "date": "2025-07-19",
+          "cleaner": "",
+          "postpone_reason": "바쁨"
+        },
+        {
+          "date": "2025-07-21",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "바쁨",
+      "category": "튀김기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "싱크대 건조대 하단",
+      "interval": 7,
+      "last_cleaned": "2025-07-21",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-12",
+          "cleaner": "차성환"
+        },
+        {
+          "date": "2025-07-19",
+          "cleaner": "",
+          "postpone_reason": "바쁨"
+        },
+        {
+          "date": "2025-07-21",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "바쁨",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "쓰레기 봉투 거치대 내부",
+      "interval": 15,
+      "last_cleaned": "2025-07-23",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-07",
+          "cleaner": "이지영,이승민"
+        },
+        {
+          "date": "2025-07-23",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "전자레인지,오븐,소독기 내외부 닦기",
+      "interval": 7,
+      "last_cleaned": "2025-07-22",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-07",
+          "cleaner": "오수빈,장나은"
+        },
+        {
+          "date": "2025-07-14",
+          "cleaner": "이승민"
+        },
+        {
+          "date": "2025-07-22",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "입구 발매트,입구 유리창",
+      "interval": 15,
+      "last_cleaned": "2025-07-23",
+      "cleaner": "이승민",
+      "history": [
+        {
+          "date": "2025-07-07",
+          "cleaner": "이지영"
+        },
+        {
+          "date": "2025-07-23",
+          "cleaner": "이승민"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "뒷 냉장고 성에제거",
+      "interval": 30,
+      "last_cleaned": "2025-07-08",
+      "cleaner": "",
+      "history": [],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "냉장고",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "2번 제빙기 뚜껑 열고 분해,응축기",
+      "interval": 180,
+      "last_cleaned": "2025-07-08",
+      "cleaner": "",
+      "history": [],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "제빙기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "3번 제빙기 뚜껑 열고 분해,응축기",
+      "interval": 180,
+      "last_cleaned": "2025-07-08",
+      "cleaner": "김동휘,차성환",
+      "history": [
+        {
+          "date": "2025-07-08",
+          "cleaner": "김동휘,차성환"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "제빙기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "2번 제빙기 뚜껑 열지 않고 분해,세니아이",
+      "interval": 30,
+      "last_cleaned": "2025-07-08",
+      "cleaner": "",
+      "history": [],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "제빙기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "3번 제빙기 뚜껑 열지 않고 분해,세니아이",
+      "interval": 30,
+      "last_cleaned": "2025-07-08",
+      "cleaner": "김동휘,차성환",
+      "history": [
+        {
+          "date": "2025-07-08",
+          "cleaner": "김동휘,차성환"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "제빙기",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "갓등 먼지 제거",
+      "interval": 30,
+      "last_cleaned": "2025-07-17",
+      "cleaner": "이정민,이수빈",
+      "history": [
+        {
+          "date": "2025-07-17",
+          "cleaner": "이정민,이수빈"
+        }
+      ],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    },
+    {
+      "cleaning_content": "뒷편 테이블 및 분실 컴포넌트 정리",
+      "interval": 30,
+      "last_cleaned": "2025-07-18",
+      "cleaner": "",
+      "history": [],
+      "postpone_days": 0,
+      "postpone_reason": "",
+      "category": "기본",
+      "dependencies": [],
+      "priority": "보통",
+      "notes": "",
+      "checklist": [],
+      "instruction_url": "",
+      "video_url": "",
+      "document_url": "",
+      "created_date": "2025-07-24",
+      "updated_date": "2025-07-24"
+    }
+  ],
+  "categories": [
+    {
+      "name": "제빙기",
+      "description": "제빙기 관련 청소 작업",
+      "color": "#2196F3",
+      "created_date": "2025-07-24"
+    },
+    {
+      "name": "커피머신",
+      "description": "커피머신 관련 청소 작업",
+      "color": "#795548",
+      "created_date": "2025-07-24"
+    },
+    {
+      "name": "튀김기",
+      "description": "튀김기 관련 청소 작업",
+      "color": "#FF5722",
+      "created_date": "2025-07-24"
+    },
+    {
+      "name": "블렌더",
+      "description": "블렌더 관련 청소 작업",
+      "color": "#4CAF50",
+      "created_date": "2025-07-24"
+    },
+    {
+      "name": "냉장고",
+      "description": "냉장고 관련 청소 작업",
+      "color": "#00BCD4",
+      "created_date": "2025-07-24"
+    },
+    {
+      "name": "기본",
+      "description": "기타 청소 작업",
+      "color": "#9E9E9E",
+      "created_date": "2025-07-24"
+    }
+  ],
+  "templates": [],
+  "settings": {
+    "alarm_times": {
+      "cleaning_alarm": [
+        11,
+        0
+      ],
+      "completion_alarm": [
+        23,
+        30
+      ]
+    },
+    "notification_settings": {
+      "desktop_notification": true,
+      "sound_notification": true,
+      "popup_style": "modern"
+    },
+    "ui_settings": {
+      "theme": "light",
+      "font_size": "medium"
+    }
+  }
+}
