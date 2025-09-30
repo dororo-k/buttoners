@@ -1,5 +1,5 @@
 import { cookies } from 'next/headers';
-import { auth, db } from './firebaseAdmin';
+import { requireAdmin } from './firebaseAdmin';
 
 /**
  * 서버 환경에서 인증된 사용자 정보를 나타냅니다.
@@ -24,6 +24,7 @@ export async function getAuthenticatedUser(): Promise<AuthenticatedUser | null> 
   }
 
   try {
+    const { auth, db } = requireAdmin();
     const decodedClaims = await auth.verifySessionCookie(sessionCookie, true);
     const uid = decodedClaims.uid;
 

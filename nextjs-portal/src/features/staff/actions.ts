@@ -1,6 +1,6 @@
 'use server';
 
-import { db, auth } from '@/lib/firebaseAdmin';
+import { requireAdmin } from '@/lib/firebaseAdmin';
 import { cookies } from 'next/headers';
 import { FieldValue } from 'firebase-admin/firestore';
 import * as bcrypt from 'bcryptjs';
@@ -22,6 +22,7 @@ export async function createAccountAction(
   formData: FormData
 ): Promise<{ message: string; token?: string }> {
   try {
+    const { db, auth } = requireAdmin();
     const name = formData.get('name') as string;
     const nickname = formData.get('nickname') as string;
     const password = formData.get('password') as string;
@@ -92,6 +93,7 @@ export async function createAccountAction(
 // --- 로그아웃 서버 액션 ---
 export async function logoutAction(): Promise<void> {
   try {
+    const { db, auth } = requireAdmin();
     // 서버 액션 응답에 직접 쿠키 삭제를 반영 (클라이언트로 Set-Cookie 전달됨)
     cookies().set('__session', '', {
       maxAge: 0,
@@ -109,6 +111,7 @@ export async function logoutAction(): Promise<void> {
 // --- 로그인 서버 액션 ---
 export async function loginAction(prevState: { message: string; token?: string }, formData: FormData): Promise<{ message: string; token?: string }> {
   try {
+    const { db, auth } = requireAdmin();
     const name = formData.get('name') as string;
     const password = formData.get('password') as string;
 

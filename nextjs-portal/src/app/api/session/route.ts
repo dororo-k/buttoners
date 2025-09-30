@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { auth } from '@/lib/firebaseAdmin'; // firebase-admin auth
+import { requireAdmin } from '@/lib/firebaseAdmin'; // firebase-admin auth
 
 // 세션 쿠키 생성 (로그인)
 export async function POST(request: NextRequest) {
@@ -10,6 +10,7 @@ export async function POST(request: NextRequest) {
   }
 
   try {
+    const { auth } = requireAdmin();
     // ID 토큰을 사용하여 세션 쿠키 생성
     // 세션 쿠키의 유효 기간: 최대 6시간
     const expiresIn = 60 * 60 * 6 * 1000; // 6시간
@@ -34,6 +35,7 @@ export async function POST(request: NextRequest) {
 // 세션 쿠키 삭제 (로그아웃)
 export async function DELETE(request: NextRequest) {
   try {
+    const { /* auth */ } = requireAdmin();
     const sessionCookie = request.cookies.get('__session')?.value;
     if (sessionCookie) {
       // 세션 쿠키를 무효화 (Firebase Admin SDK) - 이 메서드는 존재하지 않으므로 제거
